@@ -1,0 +1,184 @@
+body {
+    background-color: darkgrey;
+    font-family: 'Play', sans-serif;
+}
+
+#player1 {
+    color: white;
+    position: absolute;
+    left: 72rem;
+    top: 30rem;
+}
+
+#player2 {
+    color: white;
+    position: absolute;
+    left: 35rem;
+    top: 30rem;
+}
+
+.box {
+    border: 1px solid rgba(37, 34, 34, 0.479);
+    width: 20rem;
+    min-height: 10rem;;
+    position: relative;
+    top: 20rem;
+    left: 47rem;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+button {
+    border: 1px solid black;
+    background-color: transparent;
+    appearance: none;
+    margin: 0;
+    padding: .5em;
+    
+}
+
+button:nth-of-type(n+7) {
+    border-bottom: none;
+}
+
+button:nth-last-of-type(3n+0) {
+    border-left: none;
+}
+
+button:nth-last-of-type(3n+1) {
+    border-right: none;
+}
+
+
+button:nth-last-of-type(n-6) {
+    border-top: none;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    
+}
+
+hr {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 120%;
+    position: relative;
+    left: -0.5rem;
+    top: -2.2rem;
+    height: 5px;
+    background-color: crimson;
+    border: none;
+    z-index: 10;
+    transform: rotate(0);
+    
+}
+
+.hr2 {
+    position: relative;
+    right: -2.5rem;
+    top:  1.4rem;
+    transform: rotate(35deg);
+    
+    
+}
+
+.hr-look {
+    width: 250%;
+    
+}
+
+.hr-pos {
+    position: relative;
+    right: 2.5rem;
+    top:  1.05rem;
+    transform: rotate(35deg);
+    
+    
+}
+
+.hr-cross {
+    position: relative;
+    right: -2.5rem;
+    top: 1rem;
+    transform: rotate(40deg);
+    
+    
+}
+
+.hr-pos-cross {
+    position: relative;
+    right: 2.5rem;
+    top:  1.22rem;
+    transform: rotate(40deg);
+    
+}
+
+.hr-cross-left {
+    position: relative;
+    left: -5rem;
+    top: -1.5rem;
+    width: 230%; 
+}
+
+.hr-pos-cross-left {
+    position: relative;
+    left:  -1rem;
+    top:  -4.4rem; 
+}
+
+.hr-pos-circle-left {
+    position: relative;
+    left:  -1rem;
+    top:  -3.7rem;   
+}
+
+.restart {
+    border:none;
+    padding: 1em .5em 2em;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: blueviolet;
+    font-weight: 700;
+    position: absolute;
+    left: 54rem;
+    top: 15rem;
+    
+}
+
+.restart:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+input {
+    appearance: none;
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+}
+
+table, tr, th {
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+tr, td {
+    padding: .3em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 20%;
+    position: fixed;
+    left: 2rem;
+    top: 10rem;
+}
+
+th {
+    padding: .6em;
+}
