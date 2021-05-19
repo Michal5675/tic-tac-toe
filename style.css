@@ -182,3 +182,41 @@ table {
 th {
     padding: .6em;
 }
+
+@media only screen and (max-width: 600px) {
+    .box {
+        position: relative;
+        left: 0.5rem;
+        top: 10rem;
+    }
+   
+    #player1 {
+        position: absolute;
+        left: 11.5rem;
+        top: 33rem;
+    }
+    
+    #player2 {
+        position: absolute;
+        left: 1rem;
+        top: 33rem;
+    }
+
+    table {
+        width: 80%;
+        position: fixed;
+        left: 1.5rem;
+        top: 2rem;
+    }
+    th {
+        padding: .6em;
+    }
+
+    .restart {
+        position: absolute;
+        left: 8rem;
+        top: 28rem;
+    }
+
+   
+}
